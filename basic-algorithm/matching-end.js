@@ -9,6 +9,8 @@
 //   return true;
 // }
 
+// Solution using RegExp
+
 function matchingEnd(str, target) {
   let targ = new RegExp(target + "$", 'g');
   return Boolean(str.match(targ))
