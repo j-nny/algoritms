@@ -3,9 +3,7 @@ function truncateString(str, num) {
   for (let i = 0; i < (num < str.length? num : str.length); i++) {
     truncated += str[i];
   }
-  if (truncated < str) {
-    truncated += '...'
-  }
+  truncated < str ? truncated += '...' : truncated;
   return truncated;
 }
 
