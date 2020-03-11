@@ -12,7 +12,7 @@
 // Solution using RegExp
 
 function matchingEnd(str, target) {
-  let targ = new RegExp(target + "$", 'g');
+  let targ = new RegExp(target + "$");
   return Boolean(str.match(targ))
 }
 
